@@ -1,7 +1,8 @@
+// 1. Only one set of imports at the top
 import { db } from './firebase.js';
 import { collection, addDoc } from "firebase/firestore";
 
-// Example: Saving a new repair job
+// 2. Your first function
 const addRepair = async () => {
   await addDoc(collection(db, "repairs"), {
     car: "Ford F-150",
@@ -10,9 +11,7 @@ const addRepair = async () => {
   });
 };
 
-import { db } from './firebase.js';
-import { collection, addDoc } from "firebase/firestore";
-
+// 3. Your second function
 async function addTestRepair() {
   try {
     const docRef = await addDoc(collection(db, "repairs"), {
@@ -27,4 +26,5 @@ async function addTestRepair() {
   }
 }
 
+// 4. Actually call the function so it runs
 addTestRepair();
