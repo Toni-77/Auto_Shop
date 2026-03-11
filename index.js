@@ -16,5 +16,4 @@ async function addTestRepair() {
   }
 }
 
-// Call the function
 addTestRepair();
