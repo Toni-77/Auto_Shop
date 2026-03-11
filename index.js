@@ -1,17 +1,7 @@
-// 1. Only one set of imports at the top
+// index.js
 import { db } from './firebase.js';
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc } from "https://www.gstatic.com";
 
-// 2. Your first function
-const addRepair = async () => {
-  await addDoc(collection(db, "repairs"), {
-    car: "Ford F-150",
-    issue: "Oil Change",
-    status: "Pending"
-  });
-};
-
-// 3. Your second function
 async function addTestRepair() {
   try {
     const docRef = await addDoc(collection(db, "repairs"), {
@@ -26,5 +16,5 @@ async function addTestRepair() {
   }
 }
 
-// 4. Actually call the function so it runs
+// Call the function
 addTestRepair();
