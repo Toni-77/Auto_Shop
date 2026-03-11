@@ -410,8 +410,8 @@
     position: absolute;
     bottom: -1.5rem;
     right: -1.5rem;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     background: var(--rust);
     display: flex;
     flex-direction: column;
