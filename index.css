@@ -688,7 +688,7 @@
   }
 
   /* RESPONSIVE */
-  @media (max-width: 900px) {
+  /* @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     #hero { padding: 0 1.5rem 4rem; }
@@ -697,4 +697,29 @@
     .form-row { grid-template-columns: 1fr; }
     .about-badge { width: 90px; height: 90px; font-size: 2rem; }
     footer { padding: 1.5rem; }
+  } */
+  @media (max-width: 768px) {
+  nav {
+    /* Reduce side padding so elements don't get squashed */
+    padding: 1rem 1.5rem; 
+    flex-direction: column; /* Stack icon above links */
+    gap: 1rem;
+    position: relative; /* Optional: stops it from covering content if it gets too tall */
   }
+
+  .nav-links {
+    /* Reduce the gap between links */
+    gap: 1rem; 
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem; /* Smaller text to ensure it fits on one line */
+  }
+
+  img {
+    width: 120px; /* Slightly smaller icon for mobile */
+  }
+}
