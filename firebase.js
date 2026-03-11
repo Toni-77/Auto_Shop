@@ -24,8 +24,8 @@
 
 // Import the functions you need from the SDKs you need
 // firebase.js
-import { initializeApp } from "https://www.gstatic.com";
-import { getFirestore } from "https://www.gstatic.com";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,

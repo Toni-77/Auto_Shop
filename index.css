@@ -710,7 +710,15 @@
   .nav-links {
     /* Reduce the gap between links */
     gap: 1rem; 
-    width: 100%;
+    width: 100%;#spinner {
+  display: inline-block;
+  animation: rotateGear 2s linear infinite;
+}
+
+@keyframes rotateGear {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
     justify-content: center;
     padding: 0;
   }
@@ -722,4 +730,12 @@
   img {
     width: 120px; /* Slightly smaller icon for mobile */
   }
+}#spinner {
+  display: inline-block;
+  animation: rotateGear 2s linear infinite;
+}
+
+@keyframes rotateGear {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
