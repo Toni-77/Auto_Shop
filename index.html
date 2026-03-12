@@ -191,7 +191,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<!-- <section id="contact">
   <div class="contact-info">
     <div class="section-label">Reach Us</div>
     <h2>Get In Touch</h2>
@@ -226,7 +226,66 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <!-- CONTACT -->
+<section id="contact">
+  <div class="contact-info">
+    <div class="section-label" style="margin-bottom:1.5rem;">Book a Service</div>
+    
+    <!-- CHANGE: <div> became <form> with class="contact-form" -->
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="field">
+          <label>First Name</label>
+          <!-- ADD: id="name" -->
+          <input type="text" id="name" placeholder="Mike" required>
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Harlan">
+        </div>
+      </div>
+      <div class="field">
+        <label>Phone</label>
+        <!-- ADD: id="phone" -->
+        <input type="tel" id="phone" placeholder="(217) 555-0100" required>
+      </div>
+      <div class="field">
+        <label>Service Needed</label>
+        <!-- ADD: id="subject" -->
+        <select id="subject" required>
+          <option value="">Select a service...</option>
+          <option>Engine Repair</option>
+          <option>Brake Service</option>
+          <option>Oil & Fluids</option>
+          <option>Transmission</option>
+          <option>Diagnostics</option>
+          <option>AC & Heating</option>
+          <option>Suspension & Steering</option>
+          <option>Electrical & Battery</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Vehicle (Year, Make, Model)</label>
+        <!-- ADD: id="email" (to match your JS logic) -->
+        <input type="text" id="email" placeholder="e.g. 2018 Ford F-150" required>
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <!-- ADD: id="message" -->
+        <textarea id="message" placeholder="Describe the issue..."></textarea>
+      </div>
+      
+      <!-- BUTTON WITH SPINNER -->
+      <button type="submit" id="submit-btn" class="form-submit">
+        <span id="btn-text">Send Request</span>
+        <span id="spinner" style="display: none; margin-left: 10px;">⚙️</span>
+      </button>
+    </form>
   </div>
+</section>
 
   <div>
   <div class="section-label" style="margin-bottom:1.5rem;">Book a Service</div>
